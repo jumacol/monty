@@ -7,7 +7,7 @@
  */
 int pop_error(unsigned int line_number)
 {
-	fprintf(stderr, "L%u:Can't pop an empty\n", line number);
+	fprintf(stderr, "L%u:Can't pop an empty\n", line_number);
 	return (EXIT_FAILURE);
 }
 
@@ -42,7 +42,7 @@ int short_stack_error(unsigned int line_number, char *op)
  */
 int div_error(unsigned int line_number)
 {
-	fprintf(stderr, "L%u: dividion by zero\n", line number);
+	fprintf(stderr, "L%u: dividion by zero\n", line_number);
 	return (EXIT_FAILURE);
 }
 /**

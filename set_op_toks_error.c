@@ -30,7 +30,7 @@ void set_op_tok_error(int error_code)
 		malloc_error();
 		return;
 	}
-	new_tok[i++] = exit_str;
+	new_toks[i++] = exit_str;
 	new_toks[i] = NULL;
 	free(op_toks);
 	op_toks = new_toks;

@@ -84,7 +84,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 
 	for (i = 0; op_funcs[i].opcode; i++)
 	{
-		if (strcmp(opcode, op_func[i].opcode) == 0)
+		if (strcmp(opcode, op_funcs[i].opcode) == 0)
 			return (op_func[i].f);
 	}
 	return (NULL);
