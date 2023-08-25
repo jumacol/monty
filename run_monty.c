@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 #include <string.h>
 /**
  * free_tokens - frees the global op_toks array of strings

@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "monty"
+#include "monty.h"
 /**
  * get_int - gets a characterpointer to new string containing int
  * @num: number to convert to string
