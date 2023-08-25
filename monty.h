@@ -11,6 +11,7 @@
 
 /*global variables*/
 extern char **op_toks;
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 /**
  * struct stack_s - doubly linked list representation of a stack
