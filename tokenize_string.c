@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "monty.h"
 /**
  * strtow -takes a string and separates its words
  * @str: string to separate inte words

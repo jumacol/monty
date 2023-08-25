@@ -85,7 +85,7 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 	for (i = 0; op_funcs[i].opcode; i++)
 	{
 		if (strcmp(opcode, op_funcs[i].opcode) == 0)
-			return (op_func[i].f);
+			return (op_funcs[i].f);
 	}
 	return (NULL);
 }
@@ -131,7 +131,7 @@ int run_monty(FILE *script_fd)
 		}
 		prev_tok_len = token_arr_len();
 		op_func(&stack, line_number);
-		if (token_arr_len90 != prev_tok_len)
+		if (token_arr_len() != prev_tok_len)
 		{
 			if (op_toks && op_toks[prev_tok_len])
 				exit_status = atoi(op_toks[prev_tok_len]);
